@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <div class="alert-box" id="id">
+        <p id="ppp"></p>
+    </div>
+  <!-- addEventListener 감시자 콜백함수 순차적으로 실행하고 싶을때 콜백함수를 이용한다 -->
+<!-- 태그에 바로 실행시킬수도 있다 -->
+    <!-- <button id="btn1" onclick="document.getElementById('id').style.display = 'block';  document.getElementById('ppp').innerHTML = '허허허'; ">버튼1</button> -->
+    <button id="btn2">버튼2</button>
+    
+    <script>
+        document.getElementById('btn2').addEventListener('click', function(){
+            document.getElementById('id').style.display = 'block';
+        })
+       
+    </script>
+    
+</body>
+</html>

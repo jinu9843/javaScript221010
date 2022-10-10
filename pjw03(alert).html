@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css  불러오기 -->
+    <link rel="stylesheet" href="main.css">
+ </head>
+ <!-- 
+    1.얼럿창을만든다(처음엔 none으로, 안보였다가 보였다가)
+    2.얼럿창을 띄운다
+    3.얼럿창을 닫는다
+  -->
+ <body>
+    
+    <div id ="alert" class="alert-box">얼럿입니다
+<!-- <button id="close" onclick="document.getElementById('alert').style.display='none'">닫기</button> -->
+    </div>
+    <!-- 버튼 속성에는 onclick이라는 속석이 있다  버튼클릭시 코드 실행해줌 
+        태그에는 여러가지 속성이 있음
+    -->
+    <!-- 함수법 그냥하는법 -->
+    <button onclick="action()">버튼</button>
+    <button onclick="document.getElementById('alert').style.display='block'">버튼1</button>
+    <script>
+        function action(){
+          document.getElementById('alert').style.display = 'block';
+        //   getElemnetByClassName 사용할때는[0]
+         document.getElementsByClassName('alert-box')[0].style.color= 'black';
+
+        // ***** 숙제 *******
+        // 얼럿창 옆에 닫기 버튼을 만들고 진짜로 닫게 하라
+        }
+    </script>
+ </body>
+ </html>

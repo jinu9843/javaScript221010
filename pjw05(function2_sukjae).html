@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- <div class="alert-box" id="id">
+        <p id="ppp"></p>
+    </div>
+  
+
+    <button id="btn1" onclick="action(document.getElementById('id'), '아이디입력하세요')">버튼1</button>
+    <button id="btn2" onclick="action(document.getElementById('id'), '비번입력하세요')">버튼2</button>
+    
+    <script>
+       function action(param, text) {
+        param.style.display = 'block';
+        document.getElementById('ppp').innerHTML = text;
+       }
+    </script> -->
+
+       <div class="alert-box" id="id">
+        <p id="ppp"></p>
+    </div>
+  
+
+    <button id="btn1" onclick="action('아이디입력하세요')">버튼1</button>
+    <button id="btn2" onclick="action('비번입력하세요')">버튼2</button>
+    
+    <script>
+       function action(text) {
+        document.getElementById('id').style.display = 'block';
+        document.getElementById('ppp').innerHTML = text;
+       }
+    </script>
+
+    <!-- <div class="alert-box" id="alert">
+        <p id="title"></p>
+    </div>
+  
+
+    <button id="btn1" onclick="action()">버튼1</button>
+    <button id="btn2" onclick="action1()">버튼2</button>
+    
+    <script>
+       function action() {
+        document.getElementById('alert').style.display = 'block'
+        document.getElementById('title').innerHTML = '아이디 입력해주세요';
+       }
+       function action1() {
+        document.getElementById('alert').style.display = 'block'
+        document.getElementById('title').innerHTML = '비번 입력해주세요';
+       }
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id ="alert" class="alert-box">얼럿입니다
+        <button onclick="action2()">닫기</button>
+    </div>
+
+    <button onclick="action()">버튼</button>
+
+    <!-- <div id ="alert" class="alert-box">얼럿입니다
+        <button onclick="solution('none')">닫기</button>
+    </div>
+
+    <button onclick="solution('block')">버튼</button> -->
+    <!-- 
+        function 한글로 함수
+        코드 짧게 사용하고 재사용이 가능하게
+        css와 비슷하다 긴코드를 클래스로 한단어로
+
+        컴퓨터는 소스를 읽을때 위에서 부터 한줄한줄 읽는다 그래서 <script>는 html태그 맨 밑에다가 
+            써야한다
+            파라미터 아규먼트
+
+            ************** 숙제 *************
+            그밑에 버튼 2개 만들고
+            버튼 1누르면 아이디 입력하세요
+            버튼 2누르면 비번 입력하세요
+     -->
+    <script>
+        function action(){
+            document.getElementById('alert').style.display = 'block';
+        }
+        function action2() {
+            document.getElementById('alert').style.display = 'none';
+        }
+        //  똑같은 함수가 두개 있다 중복을 허락하지 않는다.
+        // function solution(display) {
+        //     document.getElementById('alert').style.display = display;
+        // }
+    </script>
+</body>
+</html>
